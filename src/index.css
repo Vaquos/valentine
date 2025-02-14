@@ -16,9 +16,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body {
-  background: url("./assets/bg1.webp");
+img {
+  z-index: 2;
+}
+.bg-image {
+  background: url("./assets/bg.jpg") ;
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
+   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
